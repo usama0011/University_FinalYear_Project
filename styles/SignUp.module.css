@@ -1,0 +1,144 @@
+.singUpContainer {
+  display: grid;
+  grid-template-columns: repeat(2,1fr);
+  grid-template-areas:
+   "first second" 
+   "first second";
+  grid-gap: 20px;
+  max-width: 70%;
+  height: 100%;
+  margin: 80px auto;
+}
+.heroIcon {
+  width: 23px;
+  height: 23px;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  color: gray;
+  left: 0;
+  right: 0;
+  margin: auto 0px;
+}
+.form_Container {
+  padding: 0px 30px;
+  grid-area: first;
+}
+.myInputBox {
+  padding: 10px 30px;
+  font-size: 0.9rem;
+  font-weight: 700;
+  outline: none;
+  width: 100%;
+  border-top: none;
+  border-left: none;
+  border-right: none;
+  border-bottom: 1px solid gainsboro;
+}
+.myInputBox:focus {
+  border-bottom: 1px solid black;
+}
+.inputItem {
+  margin-bottom: 25px;
+  position: relative;
+}
+.termConditions > input {
+  width: 15px;
+  height: 15px;
+  margin-right: 10px;
+}
+
+.specialLinnk {
+  text-decoration: underline;
+  font-weight: 500;
+  cursor: pointer;
+}
+.register_buttonContainer {
+  margin-top: 50px;
+}
+.ErrorDiv {
+  color: crimson;
+  position: absolute;
+  top: 10px;
+  right: 0;
+}
+.submit_Button {
+  padding: 18px 50px;
+  background-color: darkblue;
+  color: white;
+  cursor: pointer;
+  border-radius: 5px;
+  width: 100%;
+  font-size: 1rem;
+  outline: none;
+  border: none;
+}
+.termConditions {
+  display: flex;
+  align-items: center;
+  letter-spacing: 2px;
+  font-size: 0.8rem;
+}
+.submit_Button[disabled] {
+  background-color: gray;
+  color: white;
+  cursor: not-allowed;
+}
+.Image_Container > p {
+  text-decoration: underline;
+  letter-spacing: 2px;
+  cursor: pointer;
+}
+.input_Item > input {
+  width: 100%;
+  border-top: none;
+  border-left: none;
+  border-right: none;
+  border-bottom: 1px solid gainsboro;
+}
+.Image_Container {
+  display: grid;
+  grid-area: second;
+  height: 500px;
+  place-items: center;
+  position: relative;
+}
+.signUPImage {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+.formError {
+  padding: 30px;
+  font-size: 1.8rem;
+  display: flex;
+  color: crimson;
+  justify-content: center;
+}
+
+@media screen and (max-width: 576px) {
+}
+@media screen and (max-width: 768px) {
+}
+@media screen and (max-width: 992px) {
+}
+
+@media screen and (max-width: 1200px) {
+  .singUpContainer{
+    display: grid;
+  grid-template-columns: repeat(1,1fr);
+  grid-template-areas:
+   "first second" 
+   "first second";
+  grid-gap: 20px;
+  max-width: 90%;
+  height: 100%;
+  }
+  .form_Container {
+    grid-area: second;
+  }
+  .Image_Container {
+    grid-area: first;
+    position: relative;
+  }
+}

@@ -1,0 +1,20 @@
+.bannerContainer{
+  width: 100%;
+  height: 100vh;
+  background-attachment: fixed;
+  position: relative;
+}
+.bannerImage{
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+@media screen and (max-width: 576px) {
+}
+@media screen and (max-width: 768px) {
+}
+@media screen and (max-width: 992px) {
+}
+
+@media screen and (max-width: 1200px) {
+}

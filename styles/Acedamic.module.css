@@ -1,0 +1,124 @@
+.outerContainer {
+    max-width: 70%;
+    margin: 100px auto;
+  }
+  
+  .gridContainer {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    grid-gap: 20px;
+  }
+  
+  .gridBox {
+    position: relative;
+    box-shadow: 0px 4px 8px 0px rgba(0, 0, 0, 0.2);
+    border-radius: 5px;
+    overflow: hidden;
+  }
+  
+  .departmentImage {
+    width: 100%;
+    height: 100%;
+    box-shadow: 0px 4px 8px 0px rgba(0, 0, 0, 0.2);
+    border-radius:5px;
+  }
+  
+  .departmentName {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    background-color: rgba(255, 255, 255, 0.7);
+    padding: 10px;
+    text-align: center;
+    transition: all 0.3s ease;
+    opacity: 0;
+    visibility: hidden;
+  }
+  
+  .gridBox:hover .departmentName {
+    opacity: 1;
+    visibility: visible;
+  }
+  
+  /* Animation */
+  .animated {
+    animation: fadeIn 0.5s ease-in-out;
+  }
+  .parentContainer {
+    position: relative;
+    background-color: darkblue;
+    height: 250px;
+    width: 100%;
+    z-index: -1;
+  }
+  
+  .image {
+    position: absolute;
+    top: 30%;
+    left: 50%;
+    transform: translate(-50%, -20%);
+    width: 95%;
+    height: 270px;
+    object-fit:cover;
+    z-index: 0;
+  }
+  
+  .button {
+    position: absolute;
+    bottom: -10%;
+    font-size:25px;
+    right: 70px;
+    transform: translateY(-50%);
+    background-color: darkblue;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    z-index: 1;
+  }
+  
+  @keyframes fadeIn {
+    from {
+      opacity: 0;
+      transform: translateY(20px);
+    }
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+  
+  /* Media Queries */
+  @media only screen and (max-width: 600px) {
+    .gridContainer {
+      grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    }
+  }
+  
+  @media only screen and (max-width: 400px) {
+    .gridContainer {
+      grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+    }
+  }
+  @media screen and (max-width: 600px) {
+    .image {
+      width: 80%;
+      height: 250px;
+    }
+  
+    .button {
+      right: 10px;
+    }
+  }
+  
+  @media screen and (max-width: 400px) {
+    .image {
+      width: 70%;
+      height: 200px;
+    }
+  
+    .button {
+      right: 5px;
+      font-size: 0.4em;
+    }
+  }

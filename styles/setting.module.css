@@ -1,0 +1,207 @@
+.portalContainer {
+    /* overflow: hidden !important; */
+    background-color: #f7f4f4;
+    position: relative;
+    height: 100vh;
+  }
+  .brand {
+    position: relative;
+    padding: 30px;
+    width: 100%;
+    height: 200px;
+    margin: 50px 0px;
+  }
+  
+  .largeImage {
+    object-fit: cover;
+    padding: 20px;
+  }
+  .asideContainer {
+    height: 100vh;
+    position: fixed;
+    top: 0;
+    color: #212529;
+    z-index: 999;
+    background-color: #fff;
+    box-shadow: 0 12px 30px rgb(80 143 244 / 10%);
+    width: 270px;
+  }
+  .mainContainer {
+    margin-left: 270px;
+  }
+  .search_Container {
+    position: relative;
+  }
+  .serch {
+    width: 18px;
+    position: absolute;
+    top: 12px;
+    left: 15px;
+    height: 18px;
+    color: #86898e;
+  }
+  .navContainer {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 2rem;
+    background-color: white;
+  }
+  .rightNavIcon {
+    width: 20px;
+    height: 20px;
+    cursor: pointer;
+  }
+  .navItemLeft {
+    width: 250px;
+  }
+  .search_Container > input {
+    padding: 10px;
+    width: 100%;
+    height: 40px;
+    padding-left: 35px;
+    font-size: 12px;
+    outline: none;
+    padding-left: 50px;
+    padding-right: 15px;
+    border-radius: 30px;
+    border: 1px solid #64c5b199;
+    color: #86898e;
+    font-weight: 400;
+  }
+  .navItemRight {
+    display: flex;
+    align-items: center;
+  }
+  .rightItemSingle {
+    margin-right: 20px;
+  }
+  .nPluse {
+    background-color: red;
+    padding: 10px;
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    cursor: pointer;
+    color: white;
+    display: flex;
+    position: relative;
+    align-items: center;
+    justify-content: center;
+    font-weight: bold;
+  }
+  .userIntroDiv {
+    position: absolute;
+    top: 50px;
+    transition: all 2s ease;
+    width: 250px;
+    box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.1), 0px 10px 20px rgba(0, 0, 0, 0.1);
+    right: 20px;
+    border-radius: 20px;
+    overflow: hidden;
+    background-color: rgb(255, 255, 255);
+    color: black;
+  }
+  .upperContainerIntro {
+    background-color: #0d6efd;
+    padding: 20px;
+    color: white;
+    position: relative;
+  }
+  .userIntroDiv > ul {
+    list-style: none;
+  }
+  .userIntroDiv > ul > li {
+    padding: 10px 0px;
+    color: #6c757d;
+    font-size: 0.9rem;
+  }
+  .upperContainerIntro > p {
+    margin-top: 5px;
+    margin-bottom: 2px;
+    font-size: 1rem;
+  }
+  .upperContainerIntro > h2 {
+    margin-top: 10px;
+    font-size: 1.4rem;
+  }
+  .bars {
+    width: 30px;
+    height: 30px;
+    cursor: pointer;
+  }
+  .barIonDiv {
+    display: none;
+  }
+  .crossIconContainer {
+    display: none;
+    padding: 10px;
+    float: right;
+    cursor: pointer;
+  }
+  .crossIcon {
+    width: 30px;
+    height: 30px;
+    color: #212529;
+  }
+  .asideContinerleft {
+    height: 100vh;
+    position: absolute;
+    top: 0;
+    color: #212529;
+    z-index: 999;
+    background-color: #fff;
+    box-shadow: 0 12px 30px rgb(80 143 244 / 10%);
+    width: 270px;
+    transform: translateX(0);
+  }
+ 
+  .pageHeader {
+    background-color: var(--purple);
+    padding-top: 50px;
+    height: 150px;
+    color: #fff;
+  }
+  .mainContent{
+      margin-top: 0;
+  }
+  .breadcrumb {
+    display: flex;
+    align-items: center;
+    list-style: none;
+  }
+  .breadcrumb_Item {
+    margin-right: 10px;
+  }
+  .breadcurmLink {
+    text-decoration: none;
+    color:#fff;
+  }
+  .angle {
+    width: 13px;
+    height: 13px;
+    margin: 0px 10px;
+  }
+  @media (max-width: 992px) {
+    .asideContainer {
+      width: 270px;
+      position: absolute;
+      top: 0;
+      left: 0;
+      z-index: 999;
+      transform: translateX(-100vw);
+    }
+    .mainContainer {
+      margin-left: 0;
+    }
+    .barIonDiv {
+      display: block;
+    }
+    .search_Container {
+      display: none;
+    }
+    .crossIconContainer {
+      display: block;
+    }
+  }
+  

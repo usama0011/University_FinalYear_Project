@@ -1,0 +1,128 @@
+
+.largeImage{
+    width: 100%;
+    background-size: cover;
+    object-fit: cover;
+    background-image:  linear-gradient(to bottom, rgba(245, 246, 252, 0.52), rgba(117, 19, 93, 0.73)),
+    url('/assets/Images/apply.jpg');;
+    position: relative;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.applytitleContainer{
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    height: fit-content;
+    max-width: 50%;
+    margin: auto;
+}
+.applytitleContainer > h1{
+    font-size: 50px;
+}
+.AcademicContainer {
+    background: #f1f1f1;
+}
+
+.academicLife {
+      max-width: 70%;
+      margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+  }
+  
+  .boldParagraph {
+    font-weight: bold;
+    font-size: 1.1rem;
+    line-height: 25px;
+  }
+  .yellowLine{
+    width: 50px;
+    height: 10px;
+    background-color: yellow;
+  }
+  .smallerParagraph {
+    font-size: 1rem;
+    line-height: 24px;
+  }
+  
+  .signUpLoginContainer {
+    display: grid;
+    grid-template-columns: repeat(auto-fit,minmax(500px,1fr));
+  }
+  .smallIcon{
+    width: 50x;
+    height: 50px;
+    margin-left: 30px;
+    color: yellow;
+  }
+  .smallIcon:hover{
+    color: rgb(136, 136, 10);
+    transition: all .3s ease;
+  }
+  .signUpContainer {
+    background-color: #b7202e;
+    padding: 20px;
+    cursor: pointer;
+    width: 100%;
+    display: flex;
+    position: relative;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+  .login_face{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+  }
+  .loginContainer {
+    background-color: #00243a;
+    padding: 20px;
+    width: 100%;
+    display: flex;
+    cursor: pointer;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+  .signUpContainer > p{
+    color: gainsboro;
+    font-size: 1.2rem;
+  }
+  
+  .loginContainer > p{
+    color: gainsboro;
+    font-size: 1.2rem;
+  }
+  .bigTitle {
+    font-size: 3rem;
+    color: #fff;
+    margin-bottom: 0;
+  }
+  
+  .arrowIcon {
+    font-size: 1.5rem;
+    color: #fff;
+    margin-left: 10px;
+  }
+  
+  @media (min-width: 768px) {
+    .signUpContainer {
+      padding: 30px;
+    }
+    .academicLife {
+        padding: 30px;
+      }
+    .loginContainer {
+      padding: 30px;
+    }
+  }
+  
+  

@@ -1,0 +1,59 @@
+.adminContainer {
+  display: flex;
+  position: relative;
+}
+.asideContainer {
+  width: 270px;
+  display: block;
+  position: fixed;
+  top: 0;
+  left: 0;
+  height: 100vh;
+  background-color: darksalmon;
+  color: white;
+}
+.mainContainer {
+  margin-left: 270px;
+  padding: 10px;
+}
+.mainContainerr {
+  margin-left: 0;
+  padding: 10px;
+}
+.butttonStyles {
+  display: none;
+}
+.asideContainerOpen {
+  display: none;
+  background-color: red;
+}
+.myCustumButton {
+  display: none;
+}
+.myCustumButtonn {
+  display: block;
+  margin-right: 30px;
+}
+.myNavigation{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+}
+@media screen and (max-width: 768px) {
+  .asideContainer {
+    background-color: orange;
+    position: absolute;
+    top: 0;
+    left: 0;
+  }
+  .mainContainer {
+    margin-left: 0;
+  }
+  .butttonStyles {
+    display: block;
+  }
+  .myCustumButton {
+    display: block;
+  }
+}

@@ -1,0 +1,64 @@
+.banefitsContainer {
+  width: 100%;
+  background-image: #f8f8f8;
+}
+.gird_Container {
+    display: grid;
+    height: 100%;
+    max-width: 1200px;
+    margin: auto;
+    grid-template-columns: repeat(auto-fit,minmax(500px,1fr));
+}
+.gridItemOne {
+    width: 100%;
+    position: relative;
+  height: 100%;
+}
+.inner_GridMargin{
+    margin: 50px 30px;
+}
+.gridItemTwo{
+  background-color:#f8f8f8;
+}
+.fontIcon{
+    width: 70px;
+    height: 70px;
+    color: var(--teal);
+    margin-right: 20px;
+}
+.head{
+    font-size: 3rem;
+}
+.courseItem{
+    background-color: white;
+    padding: 20px;
+    margin-bottom: 10px;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+}
+.titleDescription > p{
+    color:var(--gray);
+    line-height: 25px;
+}
+.titleDescription > h3{
+   color: var(--gray-dark);
+}
+.largeImage {
+  width: 100%;
+  height: 100vh;
+  object-fit: cover;
+}
+
+@media screen and (max-width: 576px) {
+}
+@media screen and (max-width: 768px) {
+}
+@media screen and (max-width: 992px) {
+}
+
+@media screen and (max-width: 1200px) {
+    .banefitsContainer{
+        height: unset;
+    }
+}

@@ -1,0 +1,40 @@
+.container {
+    display: flex;
+    padding: 50px 200px; /* top, right, bottom, left */
+  }
+  
+  .imageContainer {
+    width: 30%;
+    margin-right: 20px;
+  }
+  
+  .image {
+    border-radius: 50%;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  }
+  
+  .messageContainer {
+    width: 70%;
+    padding: 20px 100px;
+  }
+  
+  .vcMessage {
+    font-size: 1.2rem;
+    font-style: italic;
+    text-align: justify;
+  }
+  
+  @media (max-width: 768px) {
+    .container {
+      flex-wrap: wrap;
+    }
+    .imageContainer {
+      width: 100%;
+      margin-right: 0;
+      margin-bottom: 20px;
+    }
+    .messageContainer {
+      width: 100%;
+    }
+  }
+  

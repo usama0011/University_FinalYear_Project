@@ -1,0 +1,55 @@
+.row {
+  padding: 50px 20px;
+  max-width: 1500px;
+  margin: auto;
+}
+.singleItem {
+  overflow: hidden;
+  width: 300px;
+  white-space: wrap;
+  text-align: center;
+  background-color: #fff;
+  border: 1px solid #f0f2f3;
+  box-shadow: 0 3px 24px rgba(0 0 0 / 4%);
+  border-radius: 8px;
+}
+.imageContainer {
+  width: inherit;
+  height: 250px;
+  position: relative;
+}
+.hashtags{
+  font-size: 0.8rem;
+}
+.myImage {
+  width: 100%;
+  object-fit: cover;
+  background-position: center;
+  height: 100%;
+}
+.sliderSection{
+  margin: auto;
+  width: 100%;
+  text-align: center;
+}
+.expertDetails > h2{
+  font-size: 1.4rem;
+  letter-spacing: 1.5px;
+}
+.mainhead{
+  font-size: 3rem;
+}
+.expertDetails > p{
+  font-size: 1rem;
+  color: #333;
+}
+@media screen and (max-width:669px) {
+  .singleItem{
+    width: 355px;
+  }
+}
+@media screen and (max-width:350px) {
+  .singleItem{
+    width: 355px;
+  }
+}

@@ -1,0 +1,407 @@
+.container {
+  position: relative;
+}
+
+.bgImage {
+  width: 100%;
+  height: 300px;
+  object-fit: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5));
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+
+.heading {
+  font-size: 3rem;
+  color: yellow;
+  margin: 0;
+  background-color: #f8f9fa;
+}
+.backgournd_Container {
+  background-color: #f8f9fa;
+  padding: 30px 0px;
+}
+.outer_related_container {
+  max-width: 60%;
+  margin: 0px auto;
+}
+.description {
+  font-size: 1.2rem;
+  color: white;
+  margin: 0;
+}
+.red_Line {
+  width: 80px;
+  height: 10px;
+  background-color: red;
+}
+.single_link {
+  padding: 50px 15px;
+  border: 10px solid #e2e4e6;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: bold;
+  cursor: pointer;
+  color: #034688;
+  font-size: 20px;
+}
+.outer_related_container > h2 {
+  font-weight: bold;
+  font-size: 35px;
+  color: #333;
+}
+.single_link:hover {
+  background-color: red;
+  color: white;
+  border-color: red;
+  transition: 0.5 ease-in-out;
+}
+.related_container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  grid-gap: 30px;
+}
+
+.innerImageContainer {
+  max-width: 1300px;
+  margin: 50px auto;
+  display: grid;
+  padding: 0px 30px;
+  grid-gap: 30px;
+  grid-template-columns: 1fr 1.25fr;
+  align-items: center;
+}
+.imageContainerOne {
+  position: relative;
+  height: 480px;
+  z-index: 1;
+}
+.imageOne {
+  width: 100%;
+  height: 100%;
+  border-radius: 40px;
+  object-fit: cover;
+}
+.largeImageContainer {
+  width: 100%;
+  margin-top: -180px;
+  z-index: 0;
+  height: 400px;
+  position: relative;
+}
+.backgroundImage {
+  width: 100%;
+  height: 100%;
+  background-size: cover;
+  object-fit: cover;
+  border-bottom-left-radius: 50px;
+}
+.imageTwo {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 40px;
+}
+.imageContainerTwo {
+  position: relative;
+  height: 650px;
+  z-index: 1;
+}
+.aboutContainer {
+  max-width: 1300px;
+  padding: 0px 20px;
+  margin: 50px auto;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.aboutRight {
+  max-width: 500px;
+  line-height: 28px;
+  letter-spacing: 1px;
+  color: #6e7991;
+}
+.aboutLeft > div > span {
+  color: #ff4363;
+  margin-bottom: 10px;
+  text-transform: uppercase;
+}
+.aboutLeft > div > h1 {
+  font-size: 3rem;
+  font-weight: 500;
+  color: #1f2f54;
+  line-height: 1.222em;
+  letter-spacing: 1px;
+  margin-top: 10px;
+  font-weight: bold;
+  margin-bottom: 16px;
+}
+.missionLeftContainer > span {
+  color: #ff4363;
+  margin-bottom: 10px;
+  text-transform: uppercase;
+}
+.missionLeftContainer > h1 {
+  font-size: 3rem;
+  font-weight: 500;
+  color: #1f2f54;
+  line-height: 1.222em;
+  letter-spacing: 1px;
+  margin-top: 10px;
+  font-weight: bold;
+  margin-bottom: 50px;
+}
+
+.innerMissionContainer {
+  max-width: 1300px;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 100px;
+  padding: 0px 30px;
+  margin-bottom: 50px;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-column-gap: 80px;
+  z-index: 1;
+}
+.missionLeftImageContainer {
+  height: 650px;
+  width: 100%;
+  position: relative;
+}
+.leftImageMission {
+  width: 100%;
+  height: 100%;
+  background-size: cover;
+  border-radius: 40px;
+  background-size: cover;
+}
+.missionRightImageContainer {
+  width: 100%;
+  height: 700px;
+  position: relative;
+}
+.rightImageMission {
+  width: 100%;
+  height: 100%;
+  border-radius: 40px;
+  background-size: cover;
+  object-fit: cover;
+}
+.missionRightContainer > p {
+  line-height: 25px;
+  color: #6e7991;
+  font-weight: 500;
+  margin-bottom: 25px;
+  font-size: 16px;
+}
+
+.smallImage {
+  width: 500px;
+  height: 500px;
+  position: relative;
+  margin-top: -300px;
+  z-index: -1;
+}
+
+.jj {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  background-size: cover;
+}
+.fontIcon {
+  width: 25px;
+  height: 25px;
+}
+.workContaine {
+  background-color: #fafbfc;
+  margin-top: 200px;
+}
+.innerWorkContainer {
+  max-width: 1300px;
+  margin-left: auto;
+  margin-right: auto;
+  display: flex;
+  padding-top: 100px;
+  position: relative;
+  padding-left: 30px;
+  column-gap: 30px;
+  padding-right: 30px;
+  padding-bottom: 200px;
+}
+.workOne {
+  flex: 1;
+  position: sticky;
+  padding: 20px;
+  top: 0;
+  left: 0;
+}
+.workTwo {
+  flex: 2;
+  display: flex;
+  gap: 30px 40px;
+  flex-wrap: wrap;
+}
+.workTwo > div {
+  width: 350px;
+  height: 350px;
+  background-color: white;
+  box-shadow: 0 2px 7px 0 rgb(20 20 43 / 6%);
+  border-radius: 30px;
+  overflow: hidden;
+  border: 1px solid #ebeef3;
+  padding: 62px 36px;
+}
+.workTwo > div:nth-child(even) {
+  margin-top: 50px;
+}
+.iconImageContainer {
+  width: 50px;
+  height: 50px;
+  padding: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+  border-radius: 10px;
+  position: relative;
+}
+.singlegridbox > h2 {
+  font-size: 1.7rem;
+  font-weight: normal;
+  color: #333;
+}
+.singlegridbox > p{
+    line-height: 28px;
+    color: #6e7991;
+}
+.iconImage {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+.workOne > button {
+  padding: 26px 38px;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  border-radius: 20px;
+  background-color: #ff4363;
+  margin-top: 30px;
+  color: #fff;
+  line-height: 1.111em;
+  font-weight: 700;
+  border: none;
+  outline: none;
+  text-align: center;
+  text-decoration: none;
+  -webkit-transform-style: preserve-3d;
+  transform-style: preserve-3d;
+  cursor: pointer;
+}
+.workOne > span {
+  color: #ff4363;
+  margin-bottom: 10px;
+  text-transform: uppercase;
+}
+.workOne > h1 {
+  font-size: 3rem;
+  color: #1f2f54;
+}
+.workOne > p {
+  line-height: 25px;
+  color: #6e7991;
+}
+.workOne > button:hover {
+  background-color: #034688;
+  color: white;
+  transition: all 0.5s ease;
+}
+@media screen and (max-width: 576px) {
+  .aboutLeft > div {
+    padding: 20px;
+  }
+  .aboutLeft > div > h1 {
+    font-size: 2.2rem;
+    font-weight: bold;
+  }
+  .smallImage {
+    width: 300px;
+    height: 300px;
+    margin-top: -200px;
+  }
+  .missionLeftImageContainer {
+    height: 400px;
+  }
+  
+}
+@media screen and (max-width: 768px) {
+  .innerImageContainer {
+    display: grid;
+    grid-template-columns: 1fr;
+  }
+  .largeImageContainer {
+    margin-top: -220px;
+  }
+  .missionLeftImageContainer {
+    height: 500px;
+  }
+  .missionRightImageContainer {
+    height: 500px;
+  }
+  .innerWorkContainer{
+    display: flex;
+    flex-direction: column;
+  }
+  .workOne{
+    position: unset;
+    flex: 1;
+  }
+  .workTwo{
+    flex: 1;
+  }
+  .workTwo > div{
+    width: 100%;
+  }
+}
+@media screen and (max-width: 992px) {
+  .aboutContainer {
+    display: flex;
+    flex-direction: column;
+  }
+  .aboutRight {
+    max-width: 80%;
+    text-align: center;
+  }
+  .missionLeftImageContainer {
+    max-width: 80%;
+    margin: auto;
+  }
+  .missionRightContainer {
+    max-width: 80%;
+    margin: auto;
+  }
+  .innerMissionContainer {
+    display: grid;
+    grid-template-columns: 1fr;
+  }
+}
+
+@media screen and (max-width: 1200px) {
+}

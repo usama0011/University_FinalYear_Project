@@ -1,0 +1,25 @@
+.menuIcon {
+  width: 22px;
+  height: 22px;
+  color: #08f5cd;
+  margin-right: 15px;
+}
+.menuContainer {
+  display: flex;
+  align-items: center;
+  line-height: 1.5;
+  padding:0px 30px;
+}
+
+.menuName{
+    font-size: 1rem;
+}
+.menuLink{
+    color: #212529;
+    text-decoration: none;
+    border: none;
+    outline: none;
+    background-color: transparent;
+    cursor: pointer;
+}
+
